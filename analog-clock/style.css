@@ -9,13 +9,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: #081b29;
+    overflow: hidden;
 }
 
 .wrapper {
     position: relative;
     width: 500px;
     height: 500px;
-    background: seagreen;
     border-radius: 50%;
 }
 
@@ -23,10 +24,20 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: purple;
     border-radius: 50%;
+}
+
+.number-hours span {
+    position: absolute;
+    /* 360deg/12 = 30deg */
+    transform: rotate(calc(var(--index) * 30deg));
+    inset: 6px;
+    text-align: center;
 }
 
 .number-hours span p {
     font-size: 52px;
+    color: #0ef;
+    text-shadow: 0 0 10px #0ef;
+    transform: rotate(calc(var(--index) * -30deg));
 }
