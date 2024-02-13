@@ -18,6 +18,9 @@ body {
     width: 500px;
     height: 500px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .number-hours {
@@ -40,4 +43,52 @@ body {
     color: #0ef;
     text-shadow: 0 0 10px #0ef;
     transform: rotate(calc(var(--index) * -30deg));
+}
+
+.hands-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hands-box .hand {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hands-box .hand i {
+    display: inline-block;
+}
+
+.hands-box .hours {
+    width: 320px;
+    height: 320px;
+    border: 2px solid red;
+}
+
+.hands-box .hours i {
+    width: 8px;
+    /* half of parent height */
+    height: 160px;
+    background: red;
+}
+
+.hands-box .minutes {
+    width: 450px;
+    height: 450px;
+    border: 2px solid yellow;
+}
+
+.hands-box .minutes i {
+    width: 8px;
+    /* half of parent height */
+    height: 225px;
+    background: yellow;
+}
+
+.hands-box .seconds {
+    width:480px;
+    height: 480px;
+    border: 2px solid white;
 }
