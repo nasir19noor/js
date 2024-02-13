@@ -5,9 +5,9 @@ const numberElement = [];
 //create number hours
 for (let i = 1; i<= 12; i++) {
     numberElement.push(
-        `<span><p>${i}</p></span>`
+        `<span style="--index:${i};"><p>${i}</p></span>`
     );
 }
 
 numberHours.insertAdjacentHTML("afterbegin", numberElement.join(""));
-console.log(numberElement);
+//console.log(numberElement);
