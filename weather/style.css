@@ -118,4 +118,13 @@ body {
     width: 50%;
 }
 
-.weather-details
+.weather-details i {
+    font-size: 56px;
+    margin-right: 10px;
+}
+
+.weather-details span {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+}
