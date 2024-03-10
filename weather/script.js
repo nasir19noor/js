@@ -3,9 +3,10 @@ const search = document.querySelector('.search-box button');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 
+
 search.addEventListener('click', () => {
 
-    const APIKey = '283b556d61c8804c24fa99adc8cd158b';
+    const APIKey = process.env.OPENWEATHER_API_KEY;
     const city = document.querySelector('.search-box input').value;
 
     if (city == '')
